@@ -9,5 +9,5 @@ b = gets.chomp.to_i
 puts "Podaj trzecią liczbę"
 c = gets.chomp.to_i
 
-max= a>b a : b
+max = a>b ? a:b
 puts max<=c ? c:max
