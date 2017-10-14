@@ -7,10 +7,9 @@ a = gets.chomp.to_i
 puts "Podaj drugą liczbę"
 b = gets.chomp.to_i
 
-if a < b
-	puts b
-elsif a == b
+if a <= b
 	puts b
 else 
 	puts a
 end
+

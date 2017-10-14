@@ -4,12 +4,6 @@
 
 puts "podaj liczbę"
 n = gets.chomp.to_i
-i=1
 s=0
-while i<=n
-	s=s+(i**2)
-	i+=1
-end
+(1..n).each {|x| s=s+(x**2)}
 puts s
-
-

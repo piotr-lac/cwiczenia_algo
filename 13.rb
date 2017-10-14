@@ -11,9 +11,5 @@ n = gets.chomp.to_i
 if n < 1
 	puts "Liczba musi być > 0"
 else
-	i = 1
-	while i<=n
-		puts i
-		i+=1
-	end
+	(1..n).each {|x| puts x}
 end

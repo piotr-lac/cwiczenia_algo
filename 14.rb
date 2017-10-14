@@ -10,9 +10,6 @@ n = gets.chomp.to_i
 if n < 2
 	puts "Liczba musi być > 1"
 else
-	i=2
-	while i<=n
-		puts i if i%2 == 0
-		i+=1
-	end
+	(2..n).step(2) { |i| puts i if i%2 == 0 }
+	
 end

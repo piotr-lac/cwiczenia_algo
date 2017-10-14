@@ -7,10 +7,6 @@ puts "Podaj liczbę"
 n = gets.chomp.to_i
 
 s = 1
-i = 1
-while i<=n
-	s = s * i
-	i+=1
-end
-
+(1..n).each {|x|  s = s * x}
 puts s
+
