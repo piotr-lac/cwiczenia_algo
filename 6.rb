@@ -8,9 +8,12 @@ a = gets.chomp.to_i
 puts "Podaj drugą liczbę"
 b = gets.chomp.to_i
 
-if a+b == a-b
+c = a + b
+d = a - b
+
+if c == d
 	puts "suma równa różnicy"
-elsif a+b < a-b
+elsif c < d
 	puts "suma mniejsza od różnicy"
 else
 	puts "suma większa od różnicy"
